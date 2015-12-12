@@ -172,15 +172,15 @@ public class PermissionsCalc extends JFrame {
 		layeredPane_1.setBorder(BorderFactory.createTitledBorder("Owner"));
 		layeredPane.add(layeredPane_1);
 
-		final JRadioButton rbOwnerRead = new JRadioButton("Read");
+		JRadioButton rbOwnerRead = new JRadioButton("Read");
 		rbOwnerRead.setBounds(6, 18, 114, 23);
 		layeredPane_1.add(rbOwnerRead);
 
-		final JRadioButton rbOwnerWrite = new JRadioButton("Write");
+		JRadioButton rbOwnerWrite = new JRadioButton("Write");
 		rbOwnerWrite.setBounds(6, 44, 114, 23);
 		layeredPane_1.add(rbOwnerWrite);
 
-		final JRadioButton rbOwnerExecute = new JRadioButton("Execute");
+		JRadioButton rbOwnerExecute = new JRadioButton("Execute");
 		rbOwnerExecute.setBounds(6, 70, 114, 23);
 		layeredPane_1.add(rbOwnerExecute);
 
@@ -190,15 +190,15 @@ public class PermissionsCalc extends JFrame {
 		layeredPane_2.setBorder(BorderFactory.createTitledBorder("Group"));
 		layeredPane.add(layeredPane_2);
 
-		final JRadioButton rbGroupRead = new JRadioButton("Read");
+		JRadioButton rbGroupRead = new JRadioButton("Read");
 		rbGroupRead.setBounds(6, 18, 114, 23);
 		layeredPane_2.add(rbGroupRead);
 
-		final JRadioButton rbGroupWrite = new JRadioButton("Write");
+		JRadioButton rbGroupWrite = new JRadioButton("Write");
 		rbGroupWrite.setBounds(6, 44, 114, 23);
 		layeredPane_2.add(rbGroupWrite);
 
-		final JRadioButton rbGroupExecute = new JRadioButton("Execute");
+		JRadioButton rbGroupExecute = new JRadioButton("Execute");
 		rbGroupExecute.setBounds(6, 70, 114, 23);
 		layeredPane_2.add(rbGroupExecute);
 
@@ -209,15 +209,15 @@ public class PermissionsCalc extends JFrame {
 		layeredPane_3.setBorder(BorderFactory.createTitledBorder("Other"));
 		layeredPane.add(layeredPane_3);
 
-		final JRadioButton rbOtherRead = new JRadioButton("Read");
+		JRadioButton rbOtherRead = new JRadioButton("Read");
 		rbOtherRead.setBounds(6, 19, 114, 23);
 		layeredPane_3.add(rbOtherRead);
 
-		final JRadioButton rbOtherWrite = new JRadioButton("Write");
+		JRadioButton rbOtherWrite = new JRadioButton("Write");
 		rbOtherWrite.setBounds(6, 45, 114, 23);
 		layeredPane_3.add(rbOtherWrite);
 
-		final JRadioButton rbOtherExecute = new JRadioButton("Execute");
+		JRadioButton rbOtherExecute = new JRadioButton("Execute");
 		rbOtherExecute.setBounds(6, 71, 114, 23);
 		layeredPane_3.add(rbOtherExecute);
 
@@ -227,7 +227,7 @@ public class PermissionsCalc extends JFrame {
 		panel.setBorder(BorderFactory.createTitledBorder("Octal Notation"));
 		layeredPane.add(panel);
 
-		final JLabel lblResult = new JLabel("000");
+		JLabel lblResult = new JLabel("000");
 		lblResult.setFont(new Font("Tahoma", Font.BOLD, 24));
 		lblResult.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblResult);
@@ -238,7 +238,7 @@ public class PermissionsCalc extends JFrame {
 		panel_1.setBorder(BorderFactory.createTitledBorder("Symbolic Notation"));
 		layeredPane.add(panel_1);
 
-		final JLabel label = new JLabel("");
+		JLabel label = new JLabel("");
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setFont(new Font("Tahoma", Font.BOLD, 24));
 		panel_1.add(label);
@@ -246,9 +246,9 @@ public class PermissionsCalc extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				final JRadioButton Owners[] = { rbOwnerRead, rbOwnerWrite, rbOwnerExecute };
-				final JRadioButton Groups[] = { rbGroupRead, rbGroupWrite, rbGroupExecute };
-				final JRadioButton Others[] = { rbOtherRead, rbOtherWrite, rbOtherExecute };
+				JRadioButton Owners[] = { rbOwnerRead, rbOwnerWrite, rbOwnerExecute };
+				JRadioButton Groups[] = { rbGroupRead, rbGroupWrite, rbGroupExecute };
+				JRadioButton Others[] = { rbOtherRead, rbOtherWrite, rbOtherExecute };
 
 				String octal = calcOctalPermissions(Owners, Groups, Others);
 				lblResult.setText(octal);
