@@ -3,7 +3,7 @@
  * File:	PermissionsCalc.java
  * Date:	12/11/15
  * Desc:	
- * 			A GUI application tool designed to create
+ * 			A GUI application tool designed to create/
  * 			generate UNIX file permissions in octal
  * 			and symbolic format to help students in
  * 			CIS-1450
