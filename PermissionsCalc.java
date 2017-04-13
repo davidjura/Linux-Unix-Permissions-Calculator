@@ -5,8 +5,7 @@
  * Desc:	
  * 			A GUI application tool designed to create/
  * 			generate UNIX file permissions in octal
- * 			and symbolic format to help students in
- * 			CIS-1450
+ * 			and symbolic format
  */
 
 import java.awt.BorderLayout;
